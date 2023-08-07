@@ -1,0 +1,40 @@
+artifact_path: model
+flavors:
+  python_function:
+    data: model.xgb
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.10.12
+  xgboost:
+    code: null
+    data: model.xgb
+    model_class: xgboost.sklearn.XGBClassifier
+    model_format: xgb
+    xgb_version: 1.7.6
+mlflow_version: 2.5.0
+model_uuid: fbb7f50c5edc400f88cada49149d4485
+run_id: 5cc7cd01a38d4866a320419b0334f6ec
+signature:
+  inputs: '[{"type": "long", "name": "Application mode"}, {"type": "long", "name":
+    "Application order"}, {"type": "long", "name": "Course"}, {"type": "long", "name":
+    "Previous qualification"}, {"type": "long", "name": "Nacionality"}, {"type": "long",
+    "name": "Mother''s qualification"}, {"type": "long", "name": "Father''s qualification"},
+    {"type": "long", "name": "Mother''s occupation"}, {"type": "long", "name": "Father''s
+    occupation"}, {"type": "long", "name": "Displaced"}, {"type": "long", "name":
+    "Debtor"}, {"type": "long", "name": "Tuition fees up to date"}, {"type": "long",
+    "name": "Gender"}, {"type": "long", "name": "Scholarship holder"}, {"type": "long",
+    "name": "Age at enrollment"}, {"type": "long", "name": "Curricular units 1st sem
+    (credited)"}, {"type": "long", "name": "Curricular units 1st sem (evaluations)"},
+    {"type": "long", "name": "Curricular units 1st sem (approved)"}, {"type": "double",
+    "name": "Curricular units 1st sem (grade)"}, {"type": "long", "name": "Curricular
+    units 1st sem (without evaluations)"}, {"type": "long", "name": "Curricular units
+    2nd sem (credited)"}, {"type": "long", "name": "Curricular units 2nd sem (enrolled)"},
+    {"type": "long", "name": "Curricular units 2nd sem (evaluations)"}, {"type": "long",
+    "name": "Curricular units 2nd sem (approved)"}, {"type": "double", "name": "Curricular
+    units 2nd sem (grade)"}, {"type": "long", "name": "Curricular units 2nd sem (without
+    evaluations)"}, {"type": "double", "name": "Unemployment rate"}, {"type": "double",
+    "name": "Inflation rate"}, {"type": "double", "name": "GDP"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+utc_time_created: '2023-08-07 08:30:49.615457'
